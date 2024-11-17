@@ -9,7 +9,18 @@ const heading = React.createElement( "h1",{ id: "heading" },"Hello World");
 // const parentdivElement = React.createElement("div",{id:"parent"},[divElement1,divElement2])
 
 
-console.log(heading);
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parentdivElement);
+// console.log(heading);
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(heading);
  
+
+const Component = () => {
+    return (
+        <div>
+            <h1> Hello React from Component</h1>
+        </div>
+    )
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Component />);
